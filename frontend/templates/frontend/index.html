@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'frontend/style.css' %}">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Demo of Django and React hot-reloading</title>
+</head>
+
+<body>
+    <div id='Header'></div>
+    <div id='Myfeed'></div>
+    <div id="root" class="content">
+        This will be the base template.
+    </div>
+    <script type="text/javascript" src="{% static 'frontend/public/main.js' %}"></script>
+
+</body>
+
+</html>
