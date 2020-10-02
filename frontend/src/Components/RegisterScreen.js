@@ -1,6 +1,6 @@
 import React from "react";
 
-class Myfeed extends React.Component {
+class RegisterScreen extends React.Component {
     render() {
         return (
             <p>nice feed</p>
@@ -8,4 +8,4 @@ class Myfeed extends React.Component {
     }
 }
 
-export default Myfeed;
+export default RegisterScreen;

@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: [path.resolve(__dirname, 'frontend/src/index.js')],
+    entry: {
+        Login : path.resolve(__dirname, 'frontend/src/Login.js'),
+        Register : path.resolve(__dirname, 'frontend/src/Register.js'),
+    },
     // entry: {main: '/home/toruitas/Documents/GitHub/LollipopAI/django_backend/lollipopAI/frontend/src/index.js'},
     output: {
         // where compiled files go
@@ -9,7 +12,7 @@ module.exports = {
 
         // 127.0.0.1/static/frontend/public/ where files are served from
         publicPath: "/static/frontend/public/",
-        filename: 'main.js',  // the same one we import in index.html
+        filename: '[name]_main.js',  // the same one we import in index.html
     },
     module: {
         // configuration regarding modules
@@ -25,6 +28,14 @@ module.exports = {
                     options: { presets: ["@babel/env", "@babel/preset-react"] }
                 },
             },
+            {
+                test: /\.css$/,
+                use: [
+                  'style-loader',
+                  'css-loader'
+                ]
+              }
+
         ],
     },
     devServer: {

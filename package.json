@@ -1,7 +1,7 @@
 {
   "name": "projectalfa",
   "version": "1.0.0",
-  "description": "",
+  "description": "python manage.py runserver",
   "webpack.config.js": "index.js",
   "scripts": {
     "start:dev": "webpack-dev-server --config webpack.config.js",
@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -18,8 +21,19 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
-    "webpack": "^4.44.1",
+    "css-loader": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingbeast/django_react_hotreload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codingbeast/django_react_hotreload/issues"
+  },
+  "homepage": "https://github.com/codingbeast/django_react_hotreload#readme"
 }
