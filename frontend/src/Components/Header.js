@@ -1,17 +1,30 @@
 import React from "react";
+import { 
+    BrowserRouter as Router, 
+    Route, 
+    Link, 
+    Switch 
+} from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/header.css'
+import LoginScreen from './LoginScreen';
+import RegisterScreen from './RegisterScreen';
 class Header extends React.Component {
     render() {
         return (
+            <Router>
             <header className="header">
             <h1 className="logo"><a href="#">CodingBeast</a></h1>
             <ul className="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Logout</a></li>
-                <li><a href="#"><b>Access Name :</b>Raj</a></li>
+                <li><a href="/">Home</a></li>
+                <li><Link to="/login/">Login</Link></li>
+                <li><Link to="/register/">Register</Link></li>
             </ul>
         </header> 
+              <Route path="/login/" component={LoginScreen}  title="Login"/>
+              <Route path="/register/" component={RegisterScreen}  title="Register"/>
+      </Router>
+
         );
     }
 }

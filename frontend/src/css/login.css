@@ -1,6 +1,7 @@
 .login_box {
     width: 400px;
-    height: 350px;
+    min-height: 350px;
+    height: auto;
     align-items: center;
     text-align: center;
     margin-top: 50px;

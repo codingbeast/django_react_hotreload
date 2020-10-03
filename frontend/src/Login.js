@@ -10,9 +10,6 @@ render((
     <Header />
 ), document.getElementById('Header'));
 
-render((
-    <LoginScreen />
-), document.getElementById('LoginScreen'));
 
 render((
     <Footer />

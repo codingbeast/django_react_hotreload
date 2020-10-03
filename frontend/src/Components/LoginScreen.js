@@ -11,7 +11,7 @@ class LoginScreen extends React.Component {
               <form id='login_form' method="POST" action='/outlook-autoreply/login/'>
                   <div className="inputContainer">
                       <i className="fa fa-user icon"> </i>
-                      <input nameName='Username' class="Field" type="text" placeholder="Username" required />
+                      <input name='Username' className="Field" type="text" placeholder="Username" required />
                   </div>
                   <div className="inputContainer">
                       <i className="fa fa-key icon"> </i>
