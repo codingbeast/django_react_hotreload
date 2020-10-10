@@ -6,9 +6,9 @@ import {
     Switch 
 } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.css';
-import '../css/header.css'
-import LoginScreen from './LoginScreen';
-import RegisterScreen from './RegisterScreen';
+import './header.css'; 
+import LoginScreen from 'Container/Login/LoginContainer/LoginScreen';
+import RegisterScreen from 'Container/Register/RegisterContainer/RegisterScreen';
 class Header extends React.Component {
     render() {
         return (

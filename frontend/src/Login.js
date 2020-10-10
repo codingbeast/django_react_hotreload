@@ -2,9 +2,8 @@
 
 import React from 'react'
 import { render } from 'react-dom'
-import LoginScreen from './Components/LoginScreen'
-import Header  from './Components/Header'
-import Footer from './Components/Footer'
+import Header from './Container/Header/HeaderContainer/Header'
+import Footer from './Container/Footer/FooterContainer/Footer'
 
 render((
     <Header />
