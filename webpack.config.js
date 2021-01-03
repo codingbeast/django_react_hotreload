@@ -2,8 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        Login : path.resolve(__dirname, 'frontend/src/Login.js'),
-        Register : path.resolve(__dirname, 'frontend/src/Register.js'),
+        LandingPage : path.resolve(__dirname, 'frontend/src/LandingPage.js'),
     },
     // entry: {main: '/home/toruitas/Documents/GitHub/LollipopAI/django_backend/lollipopAI/frontend/src/index.js'},
     output: {
